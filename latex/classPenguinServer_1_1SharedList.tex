@@ -1,0 +1,95 @@
+\hypertarget{classPenguinServer_1_1SharedList}{\section{Penguin\-Server\-:\-:Shared\-List Class Reference}
+\label{classPenguinServer_1_1SharedList}\index{Penguin\-Server\-::\-Shared\-List@{Penguin\-Server\-::\-Shared\-List}}
+}
+
+
+The \hyperlink{classPenguinServer_1_1SharedList}{Shared\-List} class.  
+
+
+
+
+{\ttfamily \#include $<$sharedlist.\-h$>$}
+
+Inheritance diagram for Penguin\-Server\-:\-:Shared\-List\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classPenguinServer_1_1SharedList}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classPenguinServer_1_1SharedList_a228585856adff620e9824e05136f1a65}{\hyperlink{classPenguinServer_1_1SharedList_a228585856adff620e9824e05136f1a65}{Shared\-List} ()}\label{classPenguinServer_1_1SharedList_a228585856adff620e9824e05136f1a65}
+
+\begin{DoxyCompactList}\small\item\em \hyperlink{classPenguinServer_1_1SharedList}{Shared\-List}. \end{DoxyCompactList}\item 
+bool \hyperlink{classPenguinServer_1_1SharedList_ab64f1d39eaaea4fcf299364a7e535270}{add\-Client} (\hyperlink{classPenguinServer_1_1ConnectedClient}{Connected\-Client} $\ast$)
+\begin{DoxyCompactList}\small\item\em add\-Client \end{DoxyCompactList}\item 
+bool \hyperlink{classPenguinServer_1_1SharedList_a5a6108894a1998d434ac9c9b4ec111b7}{remove\-Client} (const Q\-String \&)
+\begin{DoxyCompactList}\small\item\em remove\-Client \end{DoxyCompactList}\item 
+\hypertarget{classPenguinServer_1_1SharedList_a3f1af93454267de766e6d1495ca2d81e}{void \hyperlink{classPenguinServer_1_1SharedList_a3f1af93454267de766e6d1495ca2d81e}{call\-All\-Clients} ()}\label{classPenguinServer_1_1SharedList_a3f1af93454267de766e6d1495ca2d81e}
+
+\begin{DoxyCompactList}\small\item\em call\-All\-Clients \end{DoxyCompactList}\item 
+void \hyperlink{classPenguinServer_1_1SharedList_ab24885a029de18a5cd76507f4a7fb0f5}{call\-Client} (const Q\-String \&dest\-Name, const Q\-String \&src\-Name, qint16 type)
+\begin{DoxyCompactList}\small\item\em call\-Client calls a client named dest\-Name witch message type tyep \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{classPenguinServer_1_1SharedList}{Shared\-List} class. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classPenguinServer_1_1SharedList_ab64f1d39eaaea4fcf299364a7e535270}{\index{Penguin\-Server\-::\-Shared\-List@{Penguin\-Server\-::\-Shared\-List}!add\-Client@{add\-Client}}
+\index{add\-Client@{add\-Client}!PenguinServer::SharedList@{Penguin\-Server\-::\-Shared\-List}}
+\subsubsection[{add\-Client}]{\setlength{\rightskip}{0pt plus 5cm}bool Penguin\-Server\-::\-Shared\-List\-::add\-Client (
+\begin{DoxyParamCaption}
+\item[{{\bf Connected\-Client} $\ast$}]{cli}
+\end{DoxyParamCaption}
+)}}\label{classPenguinServer_1_1SharedList_ab64f1d39eaaea4fcf299364a7e535270}
+
+
+add\-Client 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{classPenguinServer_1_1SharedList_ab24885a029de18a5cd76507f4a7fb0f5}{\index{Penguin\-Server\-::\-Shared\-List@{Penguin\-Server\-::\-Shared\-List}!call\-Client@{call\-Client}}
+\index{call\-Client@{call\-Client}!PenguinServer::SharedList@{Penguin\-Server\-::\-Shared\-List}}
+\subsubsection[{call\-Client}]{\setlength{\rightskip}{0pt plus 5cm}void Penguin\-Server\-::\-Shared\-List\-::call\-Client (
+\begin{DoxyParamCaption}
+\item[{const Q\-String \&}]{dest\-Name, }
+\item[{const Q\-String \&}]{src\-Name, }
+\item[{qint16}]{type}
+\end{DoxyParamCaption}
+)}}\label{classPenguinServer_1_1SharedList_ab24885a029de18a5cd76507f4a7fb0f5}
+
+
+call\-Client calls a client named dest\-Name witch message type tyep 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dest\-Name} & whom \\
+\hline
+{\em src\-Name} & who \\
+\hline
+{\em type} & of message \\
+\hline
+\end{DoxyParams}
+\hypertarget{classPenguinServer_1_1SharedList_a5a6108894a1998d434ac9c9b4ec111b7}{\index{Penguin\-Server\-::\-Shared\-List@{Penguin\-Server\-::\-Shared\-List}!remove\-Client@{remove\-Client}}
+\index{remove\-Client@{remove\-Client}!PenguinServer::SharedList@{Penguin\-Server\-::\-Shared\-List}}
+\subsubsection[{remove\-Client}]{\setlength{\rightskip}{0pt plus 5cm}bool Penguin\-Server\-::\-Shared\-List\-::remove\-Client (
+\begin{DoxyParamCaption}
+\item[{const Q\-String \&}]{t\-R}
+\end{DoxyParamCaption}
+)}}\label{classPenguinServer_1_1SharedList_a5a6108894a1998d434ac9c9b4ec111b7}
+
+
+remove\-Client 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+sharedlist.\-h\item 
+sharedlist.\-cpp\end{DoxyCompactItemize}

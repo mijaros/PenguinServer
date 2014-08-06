@@ -1,0 +1,96 @@
+\hypertarget{classPenguinServer_1_1ServerThread}{\section{Penguin\-Server\-:\-:Server\-Thread Class Reference}
+\label{classPenguinServer_1_1ServerThread}\index{Penguin\-Server\-::\-Server\-Thread@{Penguin\-Server\-::\-Server\-Thread}}
+}
+Inheritance diagram for Penguin\-Server\-:\-:Server\-Thread\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classPenguinServer_1_1ServerThread}
+\end{center}
+\end{figure}
+\subsection*{Public Slots}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classPenguinServer_1_1ServerThread_a5505bcb3b0bb4483859c59c38636585c}{distribute\-Clients} (Q\-List$<$ Q\-String $>$ list)
+\begin{DoxyCompactList}\small\item\em distribute\-Clients \end{DoxyCompactList}\item 
+\hypertarget{classPenguinServer_1_1ServerThread_a7f1c00042c85effe5d3e60b102d154ec}{void \hyperlink{classPenguinServer_1_1ServerThread_a7f1c00042c85effe5d3e60b102d154ec}{ask\-New\-Connection} (\hyperlink{classPenguinServer_1_1ConnectedClient}{Connected\-Client} $\ast$)}\label{classPenguinServer_1_1ServerThread_a7f1c00042c85effe5d3e60b102d154ec}
+
+\begin{DoxyCompactList}\small\item\em ask\-New\-Connection \end{DoxyCompactList}\item 
+\hypertarget{classPenguinServer_1_1ServerThread_ad6c087d78aa5dd7ed110be45a0c7b446}{void \hyperlink{classPenguinServer_1_1ServerThread_ad6c087d78aa5dd7ed110be45a0c7b446}{connection\-On\-Success} (\hyperlink{classPenguinServer_1_1ConnectedClient}{Connected\-Client} $\ast$)}\label{classPenguinServer_1_1ServerThread_ad6c087d78aa5dd7ed110be45a0c7b446}
+
+\begin{DoxyCompactList}\small\item\em connection\-On\-Success \end{DoxyCompactList}\item 
+\hypertarget{classPenguinServer_1_1ServerThread_afe59ece0b17da4749e342ec14c7891c4}{void \hyperlink{classPenguinServer_1_1ServerThread_afe59ece0b17da4749e342ec14c7891c4}{connection\-Denied} (\hyperlink{classPenguinServer_1_1ConnectedClient}{Connected\-Client} $\ast$)}\label{classPenguinServer_1_1ServerThread_afe59ece0b17da4749e342ec14c7891c4}
+
+\begin{DoxyCompactList}\small\item\em connection\-Denied \end{DoxyCompactList}\item 
+\hypertarget{classPenguinServer_1_1ServerThread_aab8eccde8e140e9ba81c7b566208f8de}{void \hyperlink{classPenguinServer_1_1ServerThread_aab8eccde8e140e9ba81c7b566208f8de}{ready\-Read} ()}\label{classPenguinServer_1_1ServerThread_aab8eccde8e140e9ba81c7b566208f8de}
+
+\begin{DoxyCompactList}\small\item\em ready\-Read \end{DoxyCompactList}\item 
+\hypertarget{classPenguinServer_1_1ServerThread_ab8cf109db69f19384009aa826a35a0d8}{void \hyperlink{classPenguinServer_1_1ServerThread_ab8cf109db69f19384009aa826a35a0d8}{disconnected} ()}\label{classPenguinServer_1_1ServerThread_ab8cf109db69f19384009aa826a35a0d8}
+
+\begin{DoxyCompactList}\small\item\em disconnected \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Signals}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classPenguinServer_1_1ServerThread_a58b8482b6549f66c8f505dbc220579c5}{void {\bfseries error} (Q\-Tcp\-Socket\-::\-Socket\-Error err)}\label{classPenguinServer_1_1ServerThread_a58b8482b6549f66c8f505dbc220579c5}
+
+\item 
+\hypertarget{classPenguinServer_1_1ServerThread_ab0224bcf7968eadb0de910743935bec0}{void {\bfseries error} ()}\label{classPenguinServer_1_1ServerThread_ab0224bcf7968eadb0de910743935bec0}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classPenguinServer_1_1ServerThread_a6cab741c43bc6d0794b019115d7a1b51}{Server\-Thread} (qintptr socket\-Descriptor, \hyperlink{classPenguinServer_1_1SharedList}{Shared\-List} $\ast$list, Q\-Object $\ast$parent=0)
+\begin{DoxyCompactList}\small\item\em \hyperlink{classPenguinServer_1_1ServerThread}{Server\-Thread}. \end{DoxyCompactList}\item 
+\hypertarget{classPenguinServer_1_1ServerThread_aaa5ec990ecfab27ee20f24e4c4992c6e}{void {\bfseries run} ()}\label{classPenguinServer_1_1ServerThread_aaa5ec990ecfab27ee20f24e4c4992c6e}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classPenguinServer_1_1ServerThread_a6cab741c43bc6d0794b019115d7a1b51}{\index{Penguin\-Server\-::\-Server\-Thread@{Penguin\-Server\-::\-Server\-Thread}!Server\-Thread@{Server\-Thread}}
+\index{Server\-Thread@{Server\-Thread}!PenguinServer::ServerThread@{Penguin\-Server\-::\-Server\-Thread}}
+\subsubsection[{Server\-Thread}]{\setlength{\rightskip}{0pt plus 5cm}Penguin\-Server\-::\-Server\-Thread\-::\-Server\-Thread (
+\begin{DoxyParamCaption}
+\item[{qintptr}]{socket\-Descriptor, }
+\item[{{\bf Shared\-List} $\ast$}]{list, }
+\item[{Q\-Object $\ast$}]{parent = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [explicit]}}}\label{classPenguinServer_1_1ServerThread_a6cab741c43bc6d0794b019115d7a1b51}
+
+
+\hyperlink{classPenguinServer_1_1ServerThread}{Server\-Thread}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em socket\-Descriptor} & \\
+\hline
+{\em list} & \\
+\hline
+{\em parent} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classPenguinServer_1_1ServerThread_a5505bcb3b0bb4483859c59c38636585c}{\index{Penguin\-Server\-::\-Server\-Thread@{Penguin\-Server\-::\-Server\-Thread}!distribute\-Clients@{distribute\-Clients}}
+\index{distribute\-Clients@{distribute\-Clients}!PenguinServer::ServerThread@{Penguin\-Server\-::\-Server\-Thread}}
+\subsubsection[{distribute\-Clients}]{\setlength{\rightskip}{0pt plus 5cm}void Penguin\-Server\-::\-Server\-Thread\-::distribute\-Clients (
+\begin{DoxyParamCaption}
+\item[{Q\-List$<$ Q\-String $>$}]{list}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [slot]}}}\label{classPenguinServer_1_1ServerThread_a5505bcb3b0bb4483859c59c38636585c}
+
+
+distribute\-Clients 
+
+
+\begin{DoxyParams}{Parameters}
+{\em list} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+serverthread.\-h\item 
+serverthread.\-cpp\end{DoxyCompactItemize}

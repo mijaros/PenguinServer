@@ -1,0 +1,198 @@
+\hypertarget{classPenguinServer_1_1ConnectedClient}{\section{Penguin\-Server\-:\-:Connected\-Client Class Reference}
+\label{classPenguinServer_1_1ConnectedClient}\index{Penguin\-Server\-::\-Connected\-Client@{Penguin\-Server\-::\-Connected\-Client}}
+}
+
+
+The \hyperlink{classPenguinServer_1_1ConnectedClient}{Connected\-Client} class Class represents data of client in system. Is connected to \hyperlink{classPenguinServer_1_1ServerThread}{Server\-Thread} which is operating all incomming and outcomming data.  
+
+
+
+
+{\ttfamily \#include $<$connectedclient.\-h$>$}
+
+Inheritance diagram for Penguin\-Server\-:\-:Connected\-Client\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classPenguinServer_1_1ConnectedClient}
+\end{center}
+\end{figure}
+\subsection*{Signals}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classPenguinServer_1_1ConnectedClient_a9040ba0b51fb32e9bf8736aaa6e59b4d}{send\-Updated\-List} (Q\-List$<$ Q\-String $>$ s)
+\begin{DoxyCompactList}\small\item\em send\-Updated\-List \end{DoxyCompactList}\item 
+\hypertarget{classPenguinServer_1_1ConnectedClient_af4082cf1b1b69c21fbdec855d951f910}{void \hyperlink{classPenguinServer_1_1ConnectedClient_af4082cf1b1b69c21fbdec855d951f910}{request\-Connection} (\hyperlink{classPenguinServer_1_1ConnectedClient}{Connected\-Client} $\ast$)}\label{classPenguinServer_1_1ConnectedClient_af4082cf1b1b69c21fbdec855d951f910}
+
+\begin{DoxyCompactList}\small\item\em request\-Connection \end{DoxyCompactList}\item 
+\hypertarget{classPenguinServer_1_1ConnectedClient_a10f32c661b8146c904b111aa347f37cb}{void \hyperlink{classPenguinServer_1_1ConnectedClient_a10f32c661b8146c904b111aa347f37cb}{deny\-Connection} (\hyperlink{classPenguinServer_1_1ConnectedClient}{Connected\-Client} $\ast$)}\label{classPenguinServer_1_1ConnectedClient_a10f32c661b8146c904b111aa347f37cb}
+
+\begin{DoxyCompactList}\small\item\em deny\-Connection \end{DoxyCompactList}\item 
+\hypertarget{classPenguinServer_1_1ConnectedClient_acec0bf4652332010b498ca5cfcc29627}{void \hyperlink{classPenguinServer_1_1ConnectedClient_acec0bf4652332010b498ca5cfcc29627}{allow\-Connection} (\hyperlink{classPenguinServer_1_1ConnectedClient}{Connected\-Client} $\ast$)}\label{classPenguinServer_1_1ConnectedClient_acec0bf4652332010b498ca5cfcc29627}
+
+\begin{DoxyCompactList}\small\item\em allow\-Connection \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classPenguinServer_1_1ConnectedClient_a2167c805df33e4a18d40b7078f3023ae}{Connected\-Client} (Q\-Host\-Address ip\-Addr, Q\-String name, qint16 port, \hyperlink{classPenguinServer_1_1ServerThread}{Server\-Thread} $\ast$parent=0)
+\begin{DoxyCompactList}\small\item\em \hyperlink{classPenguinServer_1_1ConnectedClient}{Connected\-Client} constructor. \end{DoxyCompactList}\item 
+Q\-String \hyperlink{classPenguinServer_1_1ConnectedClient_afd5c19ed689f899e464eed48a6e80038}{get\-Name} ()
+\begin{DoxyCompactList}\small\item\em get\-Name \end{DoxyCompactList}\item 
+qint16 \hyperlink{classPenguinServer_1_1ConnectedClient_ad263530695c1806cbbb0070fce6552d9}{get\-Port} ()
+\begin{DoxyCompactList}\small\item\em get\-Port \end{DoxyCompactList}\item 
+Q\-Host\-Address \hyperlink{classPenguinServer_1_1ConnectedClient_aecc94c3bcb3bee9740d10173eb73160c}{get\-Ip\-Addr} ()
+\begin{DoxyCompactList}\small\item\em get\-Ip\-Addr \end{DoxyCompactList}\item 
+void \hyperlink{classPenguinServer_1_1ConnectedClient_a61c876737001fd3dfb06f6cd69d255d9}{call\-Request} (int req\-Id, \hyperlink{classPenguinServer_1_1ConnectedClient}{Connected\-Client} $\ast$cli)
+\begin{DoxyCompactList}\small\item\em call\-Request Calls request -\/ emits signal, to Thread to send data from another client \end{DoxyCompactList}\item 
+void \hyperlink{classPenguinServer_1_1ConnectedClient_ae14d3b2ae3096c527ba387c8b204af40}{send\-List} (Q\-List$<$ Q\-String $>$ list)
+\begin{DoxyCompactList}\small\item\em send\-List Sends list of clients to this client -\/ emits signal \end{DoxyCompactList}\item 
+void \hyperlink{classPenguinServer_1_1ConnectedClient_a89d4ee61c9736341d640b2d7edafae3b}{init} (\hyperlink{classPenguinServer_1_1ServerThread}{Server\-Thread} $\ast$parent)
+\begin{DoxyCompactList}\small\item\em init Initializes the conectivity to parent thread, connects this signalst to parent-\/$>$slots \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{classPenguinServer_1_1ConnectedClient}{Connected\-Client} class Class represents data of client in system. Is connected to \hyperlink{classPenguinServer_1_1ServerThread}{Server\-Thread} which is operating all incomming and outcomming data. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classPenguinServer_1_1ConnectedClient_a2167c805df33e4a18d40b7078f3023ae}{\index{Penguin\-Server\-::\-Connected\-Client@{Penguin\-Server\-::\-Connected\-Client}!Connected\-Client@{Connected\-Client}}
+\index{Connected\-Client@{Connected\-Client}!PenguinServer::ConnectedClient@{Penguin\-Server\-::\-Connected\-Client}}
+\subsubsection[{Connected\-Client}]{\setlength{\rightskip}{0pt plus 5cm}Penguin\-Server\-::\-Connected\-Client\-::\-Connected\-Client (
+\begin{DoxyParamCaption}
+\item[{Q\-Host\-Address}]{ip\-Addr, }
+\item[{Q\-String}]{name, }
+\item[{qint16}]{port, }
+\item[{{\bf Server\-Thread} $\ast$}]{parent = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}}\label{classPenguinServer_1_1ConnectedClient_a2167c805df33e4a18d40b7078f3023ae}
+
+
+\hyperlink{classPenguinServer_1_1ConnectedClient}{Connected\-Client} constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ip\-Addr} & Address of the client \\
+\hline
+{\em name} & name of the client \\
+\hline
+{\em port} & port which is used to communication \\
+\hline
+{\em parent} & Q\-Object \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classPenguinServer_1_1ConnectedClient_a61c876737001fd3dfb06f6cd69d255d9}{\index{Penguin\-Server\-::\-Connected\-Client@{Penguin\-Server\-::\-Connected\-Client}!call\-Request@{call\-Request}}
+\index{call\-Request@{call\-Request}!PenguinServer::ConnectedClient@{Penguin\-Server\-::\-Connected\-Client}}
+\subsubsection[{call\-Request}]{\setlength{\rightskip}{0pt plus 5cm}void Penguin\-Server\-::\-Connected\-Client\-::call\-Request (
+\begin{DoxyParamCaption}
+\item[{int}]{req\-Id, }
+\item[{{\bf Connected\-Client} $\ast$}]{cli}
+\end{DoxyParamCaption}
+)}}\label{classPenguinServer_1_1ConnectedClient_a61c876737001fd3dfb06f6cd69d255d9}
+
+
+call\-Request Calls request -\/ emits signal, to Thread to send data from another client 
+
+
+\begin{DoxyParams}{Parameters}
+{\em req\-Id} & I\-D of request more in ../messageenvelop.h \\
+\hline
+{\em cli} & client whose data mus be sent \\
+\hline
+\end{DoxyParams}
+\hypertarget{classPenguinServer_1_1ConnectedClient_aecc94c3bcb3bee9740d10173eb73160c}{\index{Penguin\-Server\-::\-Connected\-Client@{Penguin\-Server\-::\-Connected\-Client}!get\-Ip\-Addr@{get\-Ip\-Addr}}
+\index{get\-Ip\-Addr@{get\-Ip\-Addr}!PenguinServer::ConnectedClient@{Penguin\-Server\-::\-Connected\-Client}}
+\subsubsection[{get\-Ip\-Addr}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Host\-Address Penguin\-Server\-::\-Connected\-Client\-::get\-Ip\-Addr (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classPenguinServer_1_1ConnectedClient_aecc94c3bcb3bee9740d10173eb73160c}
+
+
+get\-Ip\-Addr 
+
+\begin{DoxyReturn}{Returns}
+ip address 
+\end{DoxyReturn}
+\hypertarget{classPenguinServer_1_1ConnectedClient_afd5c19ed689f899e464eed48a6e80038}{\index{Penguin\-Server\-::\-Connected\-Client@{Penguin\-Server\-::\-Connected\-Client}!get\-Name@{get\-Name}}
+\index{get\-Name@{get\-Name}!PenguinServer::ConnectedClient@{Penguin\-Server\-::\-Connected\-Client}}
+\subsubsection[{get\-Name}]{\setlength{\rightskip}{0pt plus 5cm}Q\-String Penguin\-Server\-::\-Connected\-Client\-::get\-Name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classPenguinServer_1_1ConnectedClient_afd5c19ed689f899e464eed48a6e80038}
+
+
+get\-Name 
+
+\begin{DoxyReturn}{Returns}
+name 
+\end{DoxyReturn}
+\hypertarget{classPenguinServer_1_1ConnectedClient_ad263530695c1806cbbb0070fce6552d9}{\index{Penguin\-Server\-::\-Connected\-Client@{Penguin\-Server\-::\-Connected\-Client}!get\-Port@{get\-Port}}
+\index{get\-Port@{get\-Port}!PenguinServer::ConnectedClient@{Penguin\-Server\-::\-Connected\-Client}}
+\subsubsection[{get\-Port}]{\setlength{\rightskip}{0pt plus 5cm}qint16 Penguin\-Server\-::\-Connected\-Client\-::get\-Port (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classPenguinServer_1_1ConnectedClient_ad263530695c1806cbbb0070fce6552d9}
+
+
+get\-Port 
+
+\begin{DoxyReturn}{Returns}
+port number 
+\end{DoxyReturn}
+\hypertarget{classPenguinServer_1_1ConnectedClient_a89d4ee61c9736341d640b2d7edafae3b}{\index{Penguin\-Server\-::\-Connected\-Client@{Penguin\-Server\-::\-Connected\-Client}!init@{init}}
+\index{init@{init}!PenguinServer::ConnectedClient@{Penguin\-Server\-::\-Connected\-Client}}
+\subsubsection[{init}]{\setlength{\rightskip}{0pt plus 5cm}void Penguin\-Server\-::\-Connected\-Client\-::init (
+\begin{DoxyParamCaption}
+\item[{{\bf Server\-Thread} $\ast$}]{parent}
+\end{DoxyParamCaption}
+)}}\label{classPenguinServer_1_1ConnectedClient_a89d4ee61c9736341d640b2d7edafae3b}
+
+
+init Initializes the conectivity to parent thread, connects this signalst to parent-\/$>$slots 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parent} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{classPenguinServer_1_1ConnectedClient_ae14d3b2ae3096c527ba387c8b204af40}{\index{Penguin\-Server\-::\-Connected\-Client@{Penguin\-Server\-::\-Connected\-Client}!send\-List@{send\-List}}
+\index{send\-List@{send\-List}!PenguinServer::ConnectedClient@{Penguin\-Server\-::\-Connected\-Client}}
+\subsubsection[{send\-List}]{\setlength{\rightskip}{0pt plus 5cm}void Penguin\-Server\-::\-Connected\-Client\-::send\-List (
+\begin{DoxyParamCaption}
+\item[{Q\-List$<$ Q\-String $>$}]{list}
+\end{DoxyParamCaption}
+)}}\label{classPenguinServer_1_1ConnectedClient_ae14d3b2ae3096c527ba387c8b204af40}
+
+
+send\-List Sends list of clients to this client -\/ emits signal 
+
+
+\begin{DoxyParams}{Parameters}
+{\em list} & data to be sent \\
+\hline
+\end{DoxyParams}
+\hypertarget{classPenguinServer_1_1ConnectedClient_a9040ba0b51fb32e9bf8736aaa6e59b4d}{\index{Penguin\-Server\-::\-Connected\-Client@{Penguin\-Server\-::\-Connected\-Client}!send\-Updated\-List@{send\-Updated\-List}}
+\index{send\-Updated\-List@{send\-Updated\-List}!PenguinServer::ConnectedClient@{Penguin\-Server\-::\-Connected\-Client}}
+\subsubsection[{send\-Updated\-List}]{\setlength{\rightskip}{0pt plus 5cm}void Penguin\-Server\-::\-Connected\-Client\-::send\-Updated\-List (
+\begin{DoxyParamCaption}
+\item[{Q\-List$<$ Q\-String $>$}]{s}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [signal]}}}\label{classPenguinServer_1_1ConnectedClient_a9040ba0b51fb32e9bf8736aaa6e59b4d}
+
+
+send\-Updated\-List 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+connectedclient.\-h\item 
+connectedclient.\-cpp\end{DoxyCompactItemize}
